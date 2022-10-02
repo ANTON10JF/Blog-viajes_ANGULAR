@@ -1,0 +1,8 @@
+<div class="card">
+    <div class="imagen" [ngStyle]="{'background-image': 'url(' + miPost.imagen +')'}"></div>
+    <div class="card-body">
+      <h5 class="card-title">{{ miPost.titulo }}</h5>
+      <p class="card-text">{{ miPost.fechaPublicacion }}</p>
+      <a [routerLink]="['/post', miPost.id]" class="btn btn-primary">Ver más Información</a>
+    </div>
+  </div>
